@@ -22,7 +22,8 @@ td, th {
 tr:nth-child(even),table.list thead>tr {
     background-color: #dddddd;
 }
-input[type=text], input[type=number]{
+input[type=text], input[type=number],input[type=password],input[type=email],select
+{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
