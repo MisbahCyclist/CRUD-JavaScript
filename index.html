@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Title-->
+    <title>CRUD-JS</title>
+     <!-- CSS File-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+                <table >
+                <!--Form-->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                  <!--div-1-->
+                    <div>
+                        <tr>
+                        <td><label>First Name</label></td>
+                        <!--Input First Name-->
+                       <td><input type="text" name="fuserName" id="fuserName" placeholder="Enter the your first Name"></td>
+                        <!--Validation Error-->
+                        <td><label class="validation-error hide" id="fuserNamevalidationError">This field is required</label></td>
+                    </tr>
+                    </div>
+                    <!--div-2-->
+                    <div>
+                        <tr>
+                        <td><label>Last Name</label></td>
+                        
+                        <!--Input last name-->
+                        <td><input type="text" name="luserName" id="luserName" placeholder="Enter your last name"></td>
+                        <!--Validation Error-->
+                        <td><label class="validation-error hide" id="luserNamevalidationError" >This field is required</label></td>
+                    </tr>
+                    </div>
+                    <!--div-3-->
+                    <div>
+                        <!--Input Department-->
+                        <tr>
+                        <td><label>Department / office</label></td>
+                       
+                       
+                        <td>
+                            <select name="Department" id="Department">
+                            <option>Select from list</option>
+                            <option>KOT Enterprises</option> 
+                            <option>Pak youth force</option>
+                            <option>Pak youth squad</option>
+                        </select>
+                    </td>
+                         <!--Validation Error-->
+                         <td><label class="validation-error hide" id="DepartmentvalidationError">This field is required</label></td>
+                    </tr>
+                    </div>
+                    <!--div-4-->
+                    <div>
+                        <tr>
+                        <td><label>Username</label></td>
+                       
+                        <!--Input User Name-->
+                       <td> <input type="text" name="userName" id="userName" placeholder="Enter the your Username"></td>
+                         <!--Validation Error-->
+                        <td> <label class="validation-error hide" id="userNamevalidationError">This field is required</label></td>
+                    </tr>
+                    </div>
+                    <!--div-5-->
+                    <div>
+                        <tr>
+                        <td><label>Password</label></td>
+                        
+                        <!--Input password-->
+                        <td><input type="password" name="password" id="password" placeholder="Enter the Password"></td>
+                        <!--Validation Error-->
+                        <td><label class="validation-error hide" id="passwordvalidationError">This field is required</label></td>
+                    </tr>
+                    </div>
+                     <!--div-5-->
+                     <div>
+                         <tr>
+                        <td><label>Confirm Password</label></td>
+                        
+                        <!--Input confirm password-->
+                        <td><input type="password" name="cpassword" id="cpassword" placeholder="Confirm the password"></td>
+                        <!--Validation Error-->
+                        <td><label class="validation-error hide" id="cpasswordvalidationError">This field is required</label></td>
+                    </tr>
+                    </div>
+                    <!--div-6-->
+                    <div>
+                        <tr>
+                        <td><label>Email</label></td>
+                        
+                        <!--Input Email-->
+                        <td><input type="email" name="email" id="email" placeholder="Enter the E-mail"></td>
+                        <!--Validation Error-->
+                        <td><label class="validation-error hide" id="emailvalidationError">This field is required</label></td>
+                    </tr>
+                    </div>
+                     <!--div-6-->
+                     <div>
+                         <tr>
+                        <td><label>Contact No.</label></td>
+                       
+                        <!--Input contact number-->
+                        <td><input type="text" name="contactNo" id="contactNo" placeholder="Enter the Contact Number"></td>
+                         <!--Validation Error-->
+                         <td><label class="validation-error hide" id="contactNovalidationError">This field is required</label></td>
+                    </tr>
+                    </div>
+                    <!--div-7-->
+
+                    <div class="form-action-buttons">
+                        <tr>
+                          <!--Input Button-->
+                          <td></td>
+                       <td><input type="submit" value="Submit "></td>
+                    </tr>
+                    </div>
+                </form>
+   
+   
+        <!--Nested Table for java script-->
+        <table class="list" id="stdlist">
+            <!--Table Head-->
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th> Department/ office</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Confirm Password</th>
+                    <th>Email</th>
+                    <th>Contact No.</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <!--Table Body-->
+            <tbody>
+                
+            </tbody>
+        </table>
+   
+
+
+<!-- JS File-->
+<script src="Js/crud.js"></script>
+        
+ 
+</body>
+</html>
+
+
+
+
+
+
+    
